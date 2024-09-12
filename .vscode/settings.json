@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
         "bson",
+        "Chakra",
         "godotenv",
         "gofiber",
+        "tanstack",
         "todos"
     ]
 }

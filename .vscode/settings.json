@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "bson",
+        "godotenv",
         "gofiber",
         "todos"
     ]

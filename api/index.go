@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"net/http"
 	"os"
 
 	"github.com/gofiber/fiber/v2"
@@ -65,6 +64,7 @@ app.Delete("/api/todos/:id",deleteTodo)
 		app.Static("/","./client/dist")
 	}
 	log.Fatal(app.Listen("0.0.0.0:" + port))
+
 
  	}
 
@@ -140,7 +140,5 @@ return c.Status(201).JSON(todo)
 	return c.Status(200).JSON(fiber.Map{"success": true})
 
 	}
-	
-	func Handler(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
-	}
+
+
